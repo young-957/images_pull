@@ -15,5 +15,19 @@ jobs:
       - name: Docker pull and push
         run: |
           docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:8c49212214efc4db3b8419357fd2e0b899a007c3af67311e61f1e25218f1ecfb
-          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:8c49212214efc4db3b8419357fd2e0b899a007c3af67311e61f1e25218f1ecfb registry.cn-hongkong.aliyuncs.com/atrhd/1123:v0.25.0
-          docker push registry.cn-hongkong.aliyuncs.com/atrhd/1123:v0.25.0
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:8c49212214efc4db3b8419357fd2e0b899a007c3af67311e61f1e25218f1ecfb registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-apiserver_receive_adapter
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-apiserver_receive_adapter
+          
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/controller:v0.25.0
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/controller:v0.25.0 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-controller
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-controller
+          
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/mtping:v0.25.0
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/mtping:v0.25.0 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:enenting-mtping
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-mtping
+          
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:9208eed4a101776d0e620ade638837d46fdcd6b9db30f05851a85316029dc92a
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:9208eed4a101776d0e620ade638837d46fdcd6b9db30f05851a85316029dc92a registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-webhook
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-webhook
+          
+          
