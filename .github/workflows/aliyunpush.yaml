@@ -23,7 +23,7 @@ jobs:
           docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-controller
           
           docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/mtping:v0.25.0
-          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/mtping:v0.25.0 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:enenting-mtping
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/mtping:v0.25.0 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-mtping
           docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-mtping
           
           docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:9208eed4a101776d0e620ade638837d46fdcd6b9db30f05851a85316029dc92a
