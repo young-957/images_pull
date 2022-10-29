@@ -30,4 +30,26 @@ jobs:
           docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:9208eed4a101776d0e620ade638837d46fdcd6b9db30f05851a85316029dc92a registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-webhook
           docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:eventing-webhook
           
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:2486be5065ccc79516a57a3462d747ded6ac737b6f42e4d99730eaa641375041
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:2486be5065ccc79516a57a3462d747ded6ac737b6f42e4d99730eaa641375041 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:channel_controller
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:channel_controller
+          
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:1ab796cca720964938ba0aaa46dcf1cadd46de0b256eeeb7b4d24bb0503da244
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:1ab796cca720964938ba0aaa46dcf1cadd46de0b256eeeb7b4d24bb0503da244 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:channel_dispatcher
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:channel_dispatcher
+          
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/broker/filter@sha256:e16d7a64b82417c3f2c1d55410ec5c5cb454377e8b9b3c1f60de7ebb21a9d530
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/broker/filter@sha256:e16d7a64b82417c3f2c1d55410ec5c5cb454377e8b9b3c1f60de7ebb21a9d530 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:filter
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:filter
+          
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/broker/ingress@sha256:ccb2f5e04b0e9892585debbf6eefed748a6a218431967768dc5a3752c7132499
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/broker/ingress@sha256:ccb2f5e04b0e9892585debbf6eefed748a6a218431967768dc5a3752c7132499 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:mt-ingress
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:mt-ingress
+          
+          docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/mtchannel_broker@sha256:eda810c3cc44d3bccaa0e5a06443a8039a101dc42aec776ff9e77a9fe609335c
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/mtchannel_broker@sha256:eda810c3cc44d3bccaa0e5a06443a8039a101dc42aec776ff9e77a9fe609335c registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:mtchannel_broker
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:mtchannel_broker
+          
+         
+          
           
