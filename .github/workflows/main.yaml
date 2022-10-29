@@ -19,6 +19,5 @@ jobs:
           docker push ghcr.io/young-957/ingress-nginx/controller:v0.35.0
           
           docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:8c49212214efc4db3b8419357fd2e0b899a007c3af67311e61f1e25218f1ecfb
-          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:8c49212214efc4db3b8419357fd2e0b899a007c3af67311e61f1e25218f1ecfb registry.cn-hongkong.aliyuncs.com/kserve-deployment/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter:v0.25.0
-          docker login --username=18710717157 registry.cn-hongkong.aliyuncs.com
-          docker push registry.cn-hongkong.aliyuncs.com/kserve-deployment/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter:v0.25.0
+          docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:8c49212214efc4db3b8419357fd2e0b899a007c3af67311e61f1e25218f1ecfb ghcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter:v0.25.0
+          docker push ghcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter:v0.25.0
