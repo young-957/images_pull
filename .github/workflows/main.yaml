@@ -10,7 +10,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
+          username: young-957
           password: ${{ secrets.GHCR_IO_TOKEN }}
       - name: Docker pull and push
         run: |
