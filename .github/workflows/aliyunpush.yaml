@@ -50,6 +50,12 @@ jobs:
           docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/mtchannel_broker@sha256:eda810c3cc44d3bccaa0e5a06443a8039a101dc42aec776ff9e77a9fe609335c registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:mtchannel_broker
           docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:mtchannel_broker
           
+          docker pull gcr.io/knative-releases/knative.dev/eventing-contrib/cmd/event_display
+          docker tag gcr.io/knative-releases/knative.dev/eventing-contrib/cmd/event_display registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:event_display
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:event_display
+          
+          
+          
          
           
           
