@@ -1,0 +1,20 @@
+name: GitAlibi
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # - uses: actions/checkout@v2
+      - name: Login in Docker Registry
+        uses: docker/login-action@v1
+        with:
+          registry: registry.cn-hongkong.aliyuncs.com
+          username: 18710717157
+          password: 19990109ren
+      - name: Docker pull and push
+        run: |
+          docker pull index.docker.io/seldonio/alibi-detect-server@sha256:a7143b104a14304a40a4324963efcf076a8c9dc42c363f0fbf21c3e29606e199
+          docker tag index.docker.io/seldonio/alibi-detect-server@sha256:a7143b104a14304a40a4324963efcf076a8c9dc42c363f0fbf21c3e29606e199 registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:alibi-detect-server
+          docker push registry.cn-hongkong.aliyuncs.com/serviceflow/knative-0.25:alibi-detect-server
+          
