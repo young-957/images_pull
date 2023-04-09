@@ -93,8 +93,8 @@ jobs:
           docker tag gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:6f41d379f1aacdfbb8f6d4f539e1769040e4f01bff3ad9c249b427e54dc56ea8 registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:serving-webhook
           docker push registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:serving-webhook
           
-          docker pull gcr.io/arrikto/kubeflow/oidc-authservice
-          docker tag gcr.io/arrikto/kubeflow/oidc-authservice registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:oidc-authservice
+          docker pull gcr.io/arrikto/kubeflow/oidc-authservice:28c59ef
+          docker tag gcr.io/arrikto/kubeflow/oidc-authservice:28c59ef registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:oidc-authservice
           docker push registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:oidc-authservice
           
           
