@@ -14,7 +14,7 @@ jobs:
           password: 19990109ren
       - name: Docker pull and push
         run: |
-          
+           
         
           docker pull gcr.io/ml-pipeline/minio:1.8.2
           docker tag  gcr.io/ml-pipeline/minio:1.8.2 registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:minio-1.8.2
