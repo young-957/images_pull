@@ -15,7 +15,7 @@ jobs:
       - name: Docker pull and push
         run: |
           
-          gcr.io/ml-pipeline/minio:1.8.2
+        
           docker pull gcr.io/ml-pipeline/minio:1.8.2
           docker tag  gcr.io/ml-pipeline/minio:1.8.2 registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:minio-1.8.2
           docker push registry.cn-hongkong.aliyuncs.com/serviceflow/kubeflowimages:minio-1.8.2
